@@ -53,9 +53,9 @@ def printinfo(DetailsPrinted):
     TotNetPay = 0.00
 #****************************************************************************************************************************
     # write the line of code that will open the file in read mode and assign it to EmpFile (Hint: see week 6, lab 2 as a guide)
-    with open(FILENAME, "a" ) as EmpFile:
+    with open(FILENAME, "r" ) as EmpFile:
         while True:
-            rundate = input ("Enter start date for report (MM/DD/YYYY) or All for all data in file: ")
+            rundate = input ("Enter start date for report (YYYY-MM-DD) or All for all data in file: ")
             if (rundate.upper() == "ALL"):
                 break
             try:
